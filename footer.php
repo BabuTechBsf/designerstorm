@@ -24,16 +24,16 @@
         <div class="col-md-6 col-lg-3">
           <div class="info_time">
             <h5>
-              Opening Hours Shop
+              Usefull Links
             </h5>
             <div>
               <p>
-                Monday to friday
+              <a href="<?php echo site_url('/about-us'); ?>">About</a>
               </p>
             </div>
             <div>
               <p>
-                07:00 am to 04:00 pm
+              <a href="<?php echo site_url('/privacy-policy'); ?>">Privacy Policy</a>
               </p>
             </div>
           </div>
