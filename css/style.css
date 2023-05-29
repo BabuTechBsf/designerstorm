@@ -1,5 +1,6 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins",
+ sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
 }
@@ -226,7 +227,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #0a2050;
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1013,7 +1014,8 @@ a:focus {
   background-color: #0a2050;
   color: #ffffff;
   padding: 40px 0 75px 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",
+ sans-serif;
 }
 
 .info_section .row > div {

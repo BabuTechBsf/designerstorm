@@ -8,7 +8,7 @@
 <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="<?php echo site_url(); ?>">
             <img src="<?php echo get_theme_file_uri('images/logo.png') ?>" alt="">
           </a>
           <div class="" id="">
