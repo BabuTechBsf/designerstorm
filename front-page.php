@@ -196,12 +196,12 @@
                 </a>
             </div>
             <div>
-                 
+
                 <div class="heading_container">
-                 <h2>
-                    From Our Blogs
-                </h2>
-            </div>
+                    <h2>
+                        From Our Blogs
+                    </h2>
+                </div>
                 <?php $frontPagePosts = new WP_Query(array(
             'posts_per_page' => 3
           ));
@@ -225,6 +225,41 @@
 
 <section class="animal_section layout_padding">
     <div class="container">
+        <div class="heading_container">
+            <h2 style='text-align:center;width:100%;'>
+                Available Breeds
+            </h2>
+        </div>
+        <div class="animal_container">
+            <?php 
+        $homepageBreeds = new WP_Query(array(
+            'posts_per_page'=> 2,
+            'post_type'=> 'breed'
+        ));
+        while($homepageBreeds->have_posts()){
+            $homepageBreeds->the_post(); 
+            ?>
+            <div class="box b1">
+                <div class="img-box">
+                    <img src="<?php echo get_theme_file_uri('images/dog.jpg') ?>" alt="">
+                </div>
+                <div class="detail-box">
+                    <h5>
+                        <?php the_title();?>
+                    </h5>
+                    <p>
+                        <?php echo wp_trim_words(get_the_content(),10); ?>
+                        <br/>
+                        Date Entered: <?php the_field('breed_entry_date')?>
+                    </p>
+                    <a href='<?php the_permalink();?>'> Read More</a>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
+
+        </div>
         <div class="animal_container">
             <div class="box b1">
                 <div class="img-box">
